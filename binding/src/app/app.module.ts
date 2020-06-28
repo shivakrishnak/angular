@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { PropertybindingComponent } from './propertybinding/propertybinding.component';
 import { ClassbindingComponent } from './classbinding/classbinding.component';
 import { DatainterpolationComponent } from './datainterpolation/datainterpolation.component';
+import { EventbindingComponent } from './eventbinding/eventbinding.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PropertybindingComponent,
     ClassbindingComponent,
-    DatainterpolationComponent
+    DatainterpolationComponent,
+    EventbindingComponent
   ],
   imports: [
     BrowserModule,
