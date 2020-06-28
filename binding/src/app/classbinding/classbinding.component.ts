@@ -13,7 +13,17 @@ import { Component, OnInit } from '@angular/core';
   <h2 bind-class.text-danger = "hasError" >Class Binding</h2>
   <h2 [ngClass] = "messageClasses">Class Binding</h2>
   `,
-  styleUrls: ['./classbinding.component.css']
+  styles: [`
+      .text-success{
+          color: green;
+      }
+      .text-danger{
+          color: red;
+      }
+      .text-special{
+          font-style:italic;
+      }
+`]
 })
 export class ClassbindingComponent implements OnInit {
 
