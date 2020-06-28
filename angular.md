@@ -1,6 +1,8 @@
 ##### Commands
 ng new hello-world 
+
 ng serve or npm start	-> start app
+
 ng g c test	-> create component
 
 #####
@@ -35,3 +37,8 @@ to
 
 template: '<div>Inline template</div>'
  ````
+ 
+##### Attribute vs Property
+- Attribute and property are not the same
+- Attribute - HTML ; Attributes intialize DOM properties and  then they are done. Attribute values cannot change once they are initialized
+- property - DOM ; Property values however can change
