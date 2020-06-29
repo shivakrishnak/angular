@@ -1,4 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -7,6 +8,7 @@ import { PropertybindingComponent } from './propertybinding/propertybinding.comp
 import { ClassbindingComponent } from './classbinding/classbinding.component';
 import { DatainterpolationComponent } from './datainterpolation/datainterpolation.component';
 import { EventbindingComponent } from './eventbinding/eventbinding.component';
+import { TwowaybindingComponent } from './twowaybinding/twowaybinding.component';
 
 @NgModule({
   declarations: [
@@ -14,11 +16,13 @@ import { EventbindingComponent } from './eventbinding/eventbinding.component';
     PropertybindingComponent,
     ClassbindingComponent,
     DatainterpolationComponent,
-    EventbindingComponent
+    EventbindingComponent,
+    TwowaybindingComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
