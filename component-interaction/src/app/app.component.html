@@ -1,0 +1,5 @@
+<div style="text-align: center;">
+  <h2>Welcome to Angular - Component Interaction</h2>
+  <b>{{message}}</b>
+</div>
+<app-child (childEvent)="message=$event" [parentData]="name"></app-child>
