@@ -1,11 +1,10 @@
-import { Component, OnInit, Input, Output } from '@angular/core';
-import { EventEmitter } from 'protractor';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-child',
   template: `
-    <h2>{{"Hello from child component > " + name}}</h2>
-    <button (click)="fireEvent()"></button>
+    <h2>{{"Data from parent component > " + name}}</h2>
+    <button (click)="fireEvent()">Click to push data from child to parent component</button>
   `,
   styleUrls: ['./child.component.css']
 })
